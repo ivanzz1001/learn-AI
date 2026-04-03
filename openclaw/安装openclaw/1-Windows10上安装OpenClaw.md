@@ -162,9 +162,9 @@ v24.14.1
 # openclaw onboard --install-deamon
 ```
 
-根据自己的情况选择是否安装守护进程(--install-daemon)。如果未未安装此守护进程，意味着未配置开机自启动的守护服务，此时需‌手动启动 OpenClaw Gateway 服务‌，并可选择是否后续补装自启动配置。
+根据自己的情况选择是否安装守护进程(--install-daemon)。如果未未安装此守护进程，意味着未配置开机自启动的守护服务，此时需‌手动启动 OpenClaw Gateway 服务‌(ps: 请看下文的“补充”部分)，并可选择是否后续补装自启动配置。
 
-#### 3.1.1 手动启动方法
+#### 补充: 手动启动OpenClaw Gateway方法
 
 >ps: 这里我们openclaw是采用原生windows安装
 
