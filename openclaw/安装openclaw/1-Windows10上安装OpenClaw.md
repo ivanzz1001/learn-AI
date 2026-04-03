@@ -18,6 +18,7 @@
 
 ⚠️ 注意：原生 Windows 支持有限，官方更推荐通过 WSL2 部署
 
+<br />
 
 ## 1. 安装部署(Installation)
 
@@ -106,7 +107,7 @@ v24.14.1
 
 安装成功后，会看到类似`Service: Scheduled Task (registered)` 的提示.
 
-
+<br />
 
 
 ## 2. 验证安装 (Verification)
@@ -135,6 +136,8 @@ v24.14.1
 
     ...
     ```
+
+<br />
 
 ## 3. 通过向导进行配置(Wizard Configuration)
 
@@ -198,8 +201,7 @@ v24.14.1
 
 
 
-
-
+<br />
 
 ## 4. 附录1：openclaw安装位置
 
