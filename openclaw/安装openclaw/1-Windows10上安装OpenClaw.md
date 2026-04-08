@@ -207,11 +207,35 @@ v24.14.1
 你想使用OpenClaw, 那就必须要同意它的一些风险告知。按`向左方向键←`，选择`Yes`，按`Enter`回车确认:
 
 
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-01.png)
 
 
 #### 第二步：选择配置模式
 
+小白尽量选择QuickStart模式，不需要做太多配置。
 
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-02.png)
+
+
+#### 第三步：选择执行模型
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-03.png)
+
+这里可以根据自己的情况选择相应的大模型。下面列出一些大模型的官网：
+
+- [阿里巴巴: 千问大模型](https://www.qianwen.com/)
+
+- [deepseek](https://www.deepseek.com/)
+
+- [minimax](https://agent.minimaxi.com/)
+
+- [kimi](https://www.kimi.com/)
+
+登录对应的网站注册API Key即可。
+
+>ps: 这里我们也可以先暂时跳过
+
+#### 第四步：
 
 
 <br />
