@@ -217,7 +217,7 @@ v24.14.1
 ![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-02.png)
 
 
-#### 第三步：选择执行模型
+#### 第三步：选择模型提供商
 
 ![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-03.png)
 
@@ -235,7 +235,27 @@ v24.14.1
 
 >ps: 这里我们也可以先暂时跳过
 
-#### 第四步：
+#### 第四步：根据模型提供商来选择模型
+
+这里我们先保持默认【All providers】-> 【 Keep current (default: anthropic/claude-opus-4-6)】
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-04.png)
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-05.png)
+
+
+#### 第五步: 模型检查
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-06.png)
+
+由于我们前面并未配置一个可用模型，因此这里模型检查提示可能会失败。我们可以暂时忽略
+
+#### 第六步: 选择通讯渠道
+
+配置通讯工具，虽然官方这里直接可以选飞书，但官方文档明确建议Windows 通过 WSL2 运行，并且提到原生 Windows 未测试、更容易出问题。并且我实测这里下载插件会报错，所以我们这里先跳过，后续再安装。
+
+
+
 
 
 <br />
