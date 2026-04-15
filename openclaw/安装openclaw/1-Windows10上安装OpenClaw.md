@@ -166,6 +166,8 @@ v24.14.1
 # openclaw onboard --install-deamon
 ```
 
+>ps: 我们可能得以管理员身份运行cmd来进行配置
+
 根据自己的情况选择是否安装守护进程(--install-daemon)。如果未未安装此守护进程，意味着未配置开机自启动的守护服务，此时需‌手动启动 OpenClaw Gateway 服务‌(ps: 请参看如下“补充”部分)，并可选择是否后续补装自启动配置。
 
 #### 补充: 手动启动OpenClaw Gateway方法
@@ -254,13 +256,62 @@ v24.14.1
 
 配置通讯工具，虽然官方这里直接可以选飞书，但官方文档明确建议Windows 通过 WSL2 运行，并且提到原生 Windows 未测试、更容易出问题。并且我实测这里下载插件会报错，所以我们这里先跳过，后续再安装。
 
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-07.png)
 
+#### 第七步：Search Provider
 
+OpenClaw搜索提供商的本质，就是为你的AI智能体（Agent）装上“实时联网的眼睛”。
 
+它的核心用途是让AI突破知识库的局限，能够主动在互联网上检索最新信息，并进行跨数据源的整合与分析。
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-08.png)
+
+这一步我们也暂时跳过。
+
+#### 第八步：选择常用技能
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-09.png)
+
+skill也先跳过，后续咱们在使用过程中根据自己的工作流慢慢迭代自己的skill
+
+#### 第九步：Enable Hooks
+
+openclaw enable hooks 的核心作用，是激活 OpenClaw 内部预设或自定义的自动化脚本（即 Hooks）。简单来说，就是给 AI 装上“条件反射”。
+
+可以把 Hooks 理解为一套事件驱动的自动化规则。它与 Webhook（外部系统触发 OpenClaw）不同，这里的 Hooks 完全由 OpenClaw 内部的事件所触发
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-10.png)
+
+先敲空格，表示选中当前项，再敲回车键
+
+#### 第十步: 启动服务并打开UI界面
+
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-11.png)
 
 <br />
 
-## 4. 附录1：openclaw安装位置
+## 4. 常用操作命令 (Quick Start)
+
+<div class="table-wrapper" markdown="block">
+
+|命令                         |	功能                                                            |
+|:----------------------------|:----------------------------------------------------------------|
+|**openclaw onboard**         |重新进入配置向导                                                  |
+|**openclaw status**          |查看openclaw运行状态                                              |
+|**openclaw health**          |健康检查                                                          |
+|**openclaw gateway**         |启动gateway服务                                                   |
+|**openclaw gateway status**  |查看gateway工作状态                                               |
+|**openclaw gateway stop**    |停止服务                                                          |
+|**openclaw update**          |更新到最新版本                                                     |
+|**openclaw doctor**          |诊断问题                                                          |
+|**openclaw uninstall**       |卸载openclaw                                                     |
+
+</div>
+
+
+## 5. Openclaw相关目录
+
+### 5.1 Openclaw安装目录
 
 通常我们可以使用如下命令来查看openclaw的安装位置：
 
@@ -270,12 +321,60 @@ C:\Users\xxxx\AppData\Roaming\npm\openclaw
 C:\Users\xxxx\AppData\Roaming\npm\openclaw.cmd
 ```
 
+### 5.2 openclaw配置目录
 
-## 5. 附录2：openclaw卸载
+openclaw onboard 配置完成后，生成的核心文件都在 `~/.openclaw/` 这个根目录下，我们可以使用如下命令来显示主配置文件路径:
 
-可以通过执行如下命令进行卸载：
+```bash
+# openclaw config file
+
+🦞 OpenClaw  2026.4.1 (da64a97) — I'm not magic—I'm just extremely persistent with retries and coping strategies.
+
+~\.openclaw\openclaw.json
+```
+
+下面我们介绍一下这个目录下的一些核心文件:
+
+1. `~/.openclaw/openclaw.json`
+
+    用途：全局核心配置文件
+
+    说明: 这是最重要的文件。存储了Gateway、模型、渠道、安全策略等所有全局设置。建议用openclaw configure向导修改，避免直接编辑时出错
+
+1. `~/.openclaw/workspace/`
+
+    用途: AI“灵魂”工作区
+
+    说明: 这是AI智能体的“家”，存放着定义其人格和记忆的Markdown文件。其中的文件可以被实时编辑，并立即生效
+
+
+## 7. OpenClaw卸载
+
+### 7.1 卸载CLI相关组件
+
+```bash
+# openclaw uninstall
+​
+🦞 OpenClaw  2026.2.25 (4b5d4a4) — I can't fix your code taste, but I can fix your build and your backlog.
+​
+|
+o  Uninstall which components?
+|  Gateway service, State + config, Workspace, macOS app
+|
+o  Proceed with uninstall?
+|  Yes
+Stopped Scheduled Task: OpenClaw Gateway
+Removed task script: C:\Users\xxx\.openclaw\gateway.cmd
+Removed ~\.openclaw
+Removed ~\.openclaw\workspace
+CLI still installed. Remove via npm/pnpm if desired.
+```
+### 7.2 删除软件包
 
 ```bash
 # npm uninstall -g openclaw
 # npm cache clean --force   # 清理缓存
 ```
+
+记得删除目录： `rm -rf ~/.openclaw`
+
