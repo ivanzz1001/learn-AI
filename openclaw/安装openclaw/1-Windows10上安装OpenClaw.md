@@ -276,6 +276,7 @@ openclaw enable hooks 的核心作用，是激活 OpenClaw 内部预设或自定
 |**openclaw gateway**         |启动gateway服务                                                   |
 |**openclaw gateway status**  |查看gateway工作状态                                               |
 |**openclaw gateway stop**    |停止服务                                                          |
+|**openclaw dashboard**       |在浏览器中打开控制界面UI                                           |
 |**openclaw update**          |更新到最新版本                                                     |
 |**openclaw doctor**          |诊断问题                                                          |
 |**openclaw uninstall**       |卸载openclaw                                                     |
