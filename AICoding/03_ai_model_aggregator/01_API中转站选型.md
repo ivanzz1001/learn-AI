@@ -103,7 +103,7 @@ OfoxAI 则更偏向 AI Agent 和编码工具生态，对需要同时支持 Curso
 
 在中转站购买token时经常看到类似下图：
 
-![token-price](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/AIModelAggregator/image/token_price_beilv.png)
+![token-price](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/03_ai_model_aggregator/assets/token_price_beilv.png)
 
 这里我们参考`4sapi`的参考文档对分组价格与倍率进行简要说明:
 
