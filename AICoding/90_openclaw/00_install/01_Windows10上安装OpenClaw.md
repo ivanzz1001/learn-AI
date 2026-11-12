@@ -183,19 +183,19 @@ v24.14.1
 
 你想使用OpenClaw, 那就必须要同意它的一些风险告知。按`向左方向键←`，选择`Yes`，按`Enter`回车确认:
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-01.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-01.png)
 
 
 #### 第二步：选择配置模式
 
 小白尽量选择QuickStart模式，不需要做太多配置。
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-02.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-02.png)
 
 
 #### 第三步：选择模型提供商
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-03.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-03.png)
 
 这里可以根据自己的情况选择相应的大模型。下面列出一些大模型的官网：
 
@@ -215,14 +215,14 @@ v24.14.1
 
 这里我们先保持默认【All providers】-> 【 Keep current (default: anthropic/claude-opus-4-6)】
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-04.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-04.png)
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-05.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assetsopenclaw-wininst-05.png)
 
 
 #### 第五步: 模型检查
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-06.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-06.png)
 
 由于我们前面并未配置一个可用模型，因此这里模型检查提示可能会失败。我们可以暂时忽略
 
@@ -230,7 +230,7 @@ v24.14.1
 
 配置通讯工具，虽然官方这里直接可以选飞书，但官方文档明确建议Windows 通过 WSL2 运行，并且提到原生 Windows 未测试、更容易出问题。并且我实测这里下载插件会报错，所以我们这里先跳过，后续再安装。
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-07.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-07.png)
 
 #### 第七步：Search Provider
 
@@ -238,13 +238,13 @@ OpenClaw搜索提供商的本质，就是为你的AI智能体（Agent）装上�
 
 它的核心用途是让AI突破知识库的局限，能够主动在互联网上检索最新信息，并进行跨数据源的整合与分析。
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-08.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-08.png)
 
 这一步我们也暂时跳过。
 
 #### 第八步：选择常用技能
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-09.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-09.png)
 
 skill也先跳过，后续咱们在使用过程中根据自己的工作流慢慢迭代自己的skill
 
@@ -254,13 +254,13 @@ openclaw enable hooks 的核心作用，是激活 OpenClaw 内部预设或自定
 
 可以把 Hooks 理解为一套事件驱动的自动化规则。它与 Webhook（外部系统触发 OpenClaw）不同，这里的 Hooks 完全由 OpenClaw 内部的事件所触发
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-10.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-10.png)
 
 先敲空格，表示选中当前项，再敲回车键
 
 #### 第十步: 启动服务并打开UI界面
 
-![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/openclaw/%E5%AE%89%E8%A3%85openclaw/image/openclaw-wininst-11.png)
+![openclaw-inst](https://raw.githubusercontent.com/ivanzz1001/learn-AI/master/AICoding/90_openclaw/00_install/assets/openclaw-wininst-11.png)
 
 <br />
 
